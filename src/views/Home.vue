@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <ToDoCard></ToDoCard>
+  </main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ToDoCard from "@/components/ToDoCard";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
+    ToDoCard,
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+main {
+  min-height: 100vh;
+  background: rgb(255, 217, 80);
+  background: linear-gradient(101deg, rgba(255, 217, 80, 1) 0%, rgba(255, 193, 55, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
